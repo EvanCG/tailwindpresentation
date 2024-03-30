@@ -9,21 +9,21 @@ export default function Slide({ params }) {
   const currentSlide = params.slideId;
 
   const slideArray = [
-    <Slide0 key="0" />,
-    <Slide1 key="1" />,
-    <Slide2 key="2" />,
+    <Slide0 />,
+    <Slide1 />,
+    <Slide2 />,
   ];
 
   return (
     <div className="flex h-dvh flex-col justify-between p-5">
       <div>
-        {/* <h1>
-          The Slide component is displaying component:
-          {currentSlide}
-        </h1> */}
+        <h1>
+        </h1>
       </div>
       {slideArray[currentSlide]}
-      <div>{/* <NavArrows currentSlide={currentSlide} /> */}</div>
+      <div className="self-end">
+        <NavArrows currentSlide={currentSlide} />
+      </div>
     </div>
   );
 }
