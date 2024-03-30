@@ -1,9 +1,29 @@
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function NavArrows({ currentSlide }) {
+  const router = useRouter();
+
+  /* set up keyboard listener */
+  const body = document.querySelector("body");
+  body.addEventListener("keydown", (e) => {
+    if (e.code === "ArrowLeft" && currentSlide > 0) {
+      // go back
+      console.log('left arrow');
+      router.push(`/slides/${Number(currentSlide) - 1}`);
+
+
+    } else if (e.code === "ArrowRight") {
+      // go forward
+      console.log('right arrow');
+      router.push(`/slides/${Number(currentSlide) + 1}`);
+    }
+  })
+
+
   return (
     <div className="flex">
-      <Link href={currentSlide == 0 ? '#' : `/slides/${currentSlide - 1}`}>
+      <Link href={currentSlide == 0 ? '#' : `/slides/${Number(currentSlide) - 1}`}>
         <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
