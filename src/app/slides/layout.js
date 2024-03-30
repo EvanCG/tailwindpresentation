@@ -2,9 +2,8 @@
 export default function RootLayout({ children }) {
   
   return (
-    <div>
+    <div id="slidesLayout" className="h-dvh flex flex-col">
       <div id="slideContainer">{children}</div>
-      <h3>Inside slides layout page</h3>
     </div>
   );
 }
