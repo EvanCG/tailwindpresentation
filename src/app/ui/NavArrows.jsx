@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function NavArrows({ currentSlide }) {
+export default function NavArrows({ currentSlide, slideCount }) {
   const router = useRouter();
 
   /* set up keyboard listener */
@@ -11,7 +11,7 @@ export default function NavArrows({ currentSlide }) {
       // go back
       console.log("left arrow");
       router.push(`/slides/${Number(currentSlide) - 1}`);
-    } else if (e.code === "ArrowRight") {
+    } else if (e.code === "ArrowRight" && currentSlide < slideCount) {
       // go forward
       console.log("right arrow");
       router.push(`/slides/${Number(currentSlide) + 1}`);
@@ -39,7 +39,7 @@ export default function NavArrows({ currentSlide }) {
         </svg>
       </Link>
       <p className="font-bold">{currentSlide}</p>
-      <Link href={`/slides/${Number(currentSlide) + 1}`}>
+      <Link href={currentSlide >= slideCount ? "#" : `/slides/${Number(currentSlide) + 1}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -1,28 +1,32 @@
 "use client";
 import { useState } from "react";
 import NavArrows from "@/app/ui/NavArrows";
-import Slide0 from "../Slide0";
-import Slide1 from "../Slide1";
-import Slide2 from "../Slide2";
+import CSSDivExample from "../CSSDivExample";
+import TailwindDivExample from "../TailwindDivExample";
+import SponsorSlide from "../SponsorSlide";
 
 export default function Slide({ params }) {
   const currentSlide = params.slideId;
 
+  // Passing in keys to keep linter happy
   const slideArray = [
-    <Slide0 />,
-    <Slide1 />,
-    <Slide2 />,
+    <SponsorSlide imageUrl={'/titlesponsor.png'} key='1'/>,
+    <CSSDivExample key='1'/>,
+    <TailwindDivExample key='1'/>,
+    <SponsorSlide imageUrl={'/creditsponsor.png'} key='2'/>,
   ];
 
+  slideArray.forEach
+
   return (
-    <div className="flex h-dvh flex-col justify-between p-5">
+    <div className="flex h-dvh flex-col justify-between p-10 pb-5">
       <div>
         <h1>
         </h1>
       </div>
-      {slideArray[currentSlide]}
-      <div className="self-end">
-        <NavArrows currentSlide={currentSlide} />
+      {slideArray[Math.min(currentSlide, slideArray.length -1)]}
+      <div className="self-end mt-5">
+        <NavArrows currentSlide={currentSlide} slideCount={slideArray.length}/>
       </div>
     </div>
   );
