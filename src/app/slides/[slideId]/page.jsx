@@ -2,12 +2,18 @@
 import { useState } from "react";
 import NavArrows from "@/app/ui/NavArrows";
 import BackgroundAnimation from "@/app/ui/BackgroundAnimation";
-import CSSDivExample from "../CSSDivExample";
-import TailwindDivExample from "../TailwindDivExample";
+
+/* Slides */
 import SponsorSlide from "../SponsorSlide";
-import BasicSlide from "../BasicSlide";
-import WhatIsTailwind from "../WhatIsTailwind";
 import TitleSlide from "../TitleSlide";
+import WhatIsTailwind from "../WhatIsTailwind";
+import TailwindHistory from "../TailwindHistory";
+
+
+/* Boilerplate slides & examples */
+// import CSSDivExample from "../CSSDivExample";
+// import TailwindDivExample from "../TailwindDivExample";
+// import BasicSlide from "../BasicSlide";
 
 export default function Slide({ params }) {
   const currentSlide = params.slideId;
@@ -17,10 +23,13 @@ export default function Slide({ params }) {
     <SponsorSlide imageUrl={"/titlesponsor.png"} key="1" />,
     <TitleSlide key="1" />,
     <WhatIsTailwind key="1" />,
+    <TailwindHistory key="1" />,
     <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
-    <CSSDivExample key="1" />,
-    <TailwindDivExample key="1" />,
-    <BasicSlide key="1" />,
+
+    /* Boilerplate examples */
+    // <CSSDivExample key="1" />,
+    // <TailwindDivExample key="1" />,
+    // <BasicSlide key="1" />,
   ];
 
   slideArray.forEach;
