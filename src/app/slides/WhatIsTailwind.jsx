@@ -12,14 +12,14 @@ export default function WhatIsTailwind() {
           represent common pieces of CSS functionality
         </li>
         <li className="my-20">
-          When ready to view changes – Tailwind CLI takes these classes and{" "}
+          When ready to ship – Tailwind CLI takes these classes and{" "}
           <span className="font-bold text-blue-600">compiles</span> them into a
           small CSS file with only the utilities that you actually need
         </li>
         <li className="my-20">
-          Tailwind CSS is{" "}
+          Tailwind CSS itself is{" "}
           <span className="font-bold text-blue-600">unopinionated</span> – there
-          are no-prebuilt styles, you’re just performing basic operations
+          are no-prebuilt components, you’re just performing CSS styles
         </li>
       </ul>
     </div>

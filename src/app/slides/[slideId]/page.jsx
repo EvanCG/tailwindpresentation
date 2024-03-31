@@ -8,6 +8,7 @@ import SponsorSlide from "../SponsorSlide";
 import TitleSlide from "../TitleSlide";
 import WhatIsTailwind from "../WhatIsTailwind";
 import TailwindHistory from "../TailwindHistory";
+import ExampleDiv from "../ExampleDiv";
 
 
 /* Boilerplate slides & examples */
@@ -24,6 +25,7 @@ export default function Slide({ params }) {
     <TitleSlide key="1" />,
     <WhatIsTailwind key="1" />,
     <TailwindHistory key="1" />,
+    <ExampleDiv key="1" />,
     <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
 
     /* Boilerplate examples */
