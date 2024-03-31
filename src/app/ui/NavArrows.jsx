@@ -39,7 +39,7 @@ export default function NavArrows({ currentSlide, slideCount }) {
         </svg>
       </Link>
       <p className="font-bold">{currentSlide}</p>
-      <Link href={currentSlide >= slideCount ? "#" : `/slides/${Number(currentSlide) + 1}`}>
+      <Link href={currentSlide > slideCount ? "#" : `/slides/${Number(currentSlide) + 1}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
