@@ -11,7 +11,7 @@ export default function NavArrows({ currentSlide, slideCount }) {
       // go back
       console.log("left arrow");
       router.push(`/slides/${Number(currentSlide) - 1}`);
-    } else if (e.code === "ArrowRight" && currentSlide < slideCount) {
+    } else if (e.code === "ArrowRight" && currentSlide < (slideCount -1 )) {
       // go forward
       console.log("right arrow");
       router.push(`/slides/${Number(currentSlide) + 1}`);
@@ -43,7 +43,7 @@ export default function NavArrows({ currentSlide, slideCount }) {
       <Link
         className="z-50"
         href={
-          currentSlide > slideCount
+          currentSlide >= (slideCount -1 )
             ? "#"
             : `/slides/${Number(currentSlide) + 1}`
         }
