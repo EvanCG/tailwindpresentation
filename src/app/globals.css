@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 
+@layer utilities {
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+  .animation-delay-10000 {
+    animation-delay: 10s;
+  }
+}
+
+
 #divContainer {
   display: flex;
   justify-content: center;

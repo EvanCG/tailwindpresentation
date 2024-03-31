@@ -19,8 +19,9 @@ export default function NavArrows({ currentSlide, slideCount }) {
   });
 
   return (
-    <div className="flex space-x-2 rounded-full border-2 bg-gray-100 p-3">
+    <div className="z-50 flex space-x-2 rounded-full border-2 bg-gray-100 p-3">
       <Link
+        className="z-50"
         href={currentSlide == 0 ? "#" : `/slides/${Number(currentSlide) - 1}`}
       >
         <svg
@@ -38,8 +39,15 @@ export default function NavArrows({ currentSlide, slideCount }) {
           />
         </svg>
       </Link>
-      <p className="font-bold">{currentSlide}</p>
-      <Link href={currentSlide > slideCount ? "#" : `/slides/${Number(currentSlide) + 1}`}>
+      <p className="z-50 font-bold">{currentSlide}</p>
+      <Link
+        className="z-50"
+        href={
+          currentSlide > slideCount
+            ? "#"
+            : `/slides/${Number(currentSlide) + 1}`
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

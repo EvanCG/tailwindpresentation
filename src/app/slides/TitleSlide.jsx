@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function TitleSlide() {
   return (
-    <div className="h-full w-full rounded-2xl bg-neutral-100 p-16 pt-20 shadow-lg flex flex-col justify-center">
-      <div className="w-2/5">
+    <div className="h-full w-full rounded-2xl opacity-85 bg-neutral-100 p-16 pt-20 shadow-lg flex flex-col justify-center">
+      <div className="w-3/5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
