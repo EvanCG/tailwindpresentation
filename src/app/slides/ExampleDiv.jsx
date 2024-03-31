@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TailwindDivExample from "./TailwindDivExample";
 
 export default function ExampleDiv() {
   return (
@@ -7,23 +7,25 @@ export default function ExampleDiv() {
       <div className="flex flex-row justify-around">
         <div className="m-5">
           <h3 className="mx-5 mb-5 mt-20 text-5xl font-bold">Default</h3>
-          <Image
-            src="/divSCreenshotDefault.png"
-            width={1780}
-            height={1582}
-            alt="Screenshot of default state div"
-            className="size-11/12 shadow-2xl"
-          />
+          <div className="mockup-browser bg-base-300 border shadow-2xl">
+            <div className="mockup-browser-toolbar">
+              <div className="input">//localhost:3000</div>
+            </div>
+            <div className="bg-neutral-50 flex justify-center px-4 py-16">
+              <TailwindDivExample />
+            </div>
+          </div>
         </div>
         <div className="m-5">
           <h3 className="mx-5 mb-5 mt-20 text-5xl font-bold">On Hover</h3>
-          <Image
-            src="/divSCreenshotHover.png"
-            width={1780}
-            height={1582}
-            alt="Screenshot of hover state div"
-            className="size-11/12 shadow-2xl"
-          />
+          <div className="mockup-browser bg-base-300 border shadow-2xl">
+            <div className="mockup-browser-toolbar">
+              <div className="input">//localhost:3000</div>
+            </div>
+            <div className="bg-neutral-50 flex justify-center px-4 py-16">
+              <TailwindDivExample hoverState={true} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
