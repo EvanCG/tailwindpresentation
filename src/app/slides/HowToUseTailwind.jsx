@@ -14,7 +14,7 @@ export default function HowToUseTailwind() {
       <div className="flex w-2/5 flex-col items-center justify-center p-2 left-5">
           <div className="mockup-browser bg-base-300 -rotate-3 border shadow-2xl ">
             <div className="mockup-browser-toolbar">
-              <div className="input">{`//localhost:3000`}</div>
+              <div className="input">{`tailwindcss.com/`}</div>
             </div>
             <div className="flex justify-center bg-neutral-50">
               <Image
