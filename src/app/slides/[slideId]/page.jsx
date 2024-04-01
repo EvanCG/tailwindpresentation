@@ -11,6 +11,7 @@ import TailwindHistory from "../TailwindHistory";
 import ExampleDiv from "../ExampleDiv";
 import VanillaCSSExample from "../VanillaCSSExample";
 import TailwindCSSExample from "../TailwindCSSExample";
+import TailwindCSSBenefits from "../TailwindCSSBenefits";
 
 /* Boilerplate slides & examples */
 // import CSSDivExample from "../CSSDivExample";
@@ -29,6 +30,7 @@ export default function Slide({ params }) {
     <ExampleDiv key="1" />,
     <VanillaCSSExample key="1" />,
     <TailwindCSSExample key="1" />,
+    <TailwindCSSBenefits key="1" />,
     <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
 
     /* Boilerplate examples */

@@ -1,4 +1,6 @@
-export default function TailwindCSSExample() {
+import VerticalColumn from '@/app/ui/VerticalColumn';
+
+export default function TailwindCSSBenefits() {
   return (
     <div className="h-full w-full overflow-y-auto rounded-2xl bg-neutral-100 p-8 pt-10 opacity-85 shadow-lg 2xl:p-16 2xl:pt-20">
       <h1 className="text-3xl font-bold lg:text-7xl 2xl:text-9xl">
@@ -47,7 +49,7 @@ export default function TailwindCSSExample() {
           </div>
         </div>
         <div className="m-2 2xl:m-5">
-          
+          <VerticalColumn />
         </div>
       </div>
     </div>

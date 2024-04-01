@@ -5,7 +5,7 @@ export default function VanillaCSSExample() {
         Let&apos;s look at a vanilla CSS example:
       </h1>
       <div className="flex flex-row justify-around">
-        <div className="m-2 2xl:m-5">
+        <div className="m-2 2xl:m-5 w-4/5">
           <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             index.html
           </h3>
@@ -42,7 +42,7 @@ export default function VanillaCSSExample() {
             </pre>
           </div>
         </div>
-        <div className="m-2 2xl:m-5">
+        <div className="m-2 2xl:m-5 w-4/5">
           <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             styles.css
           </h3>
