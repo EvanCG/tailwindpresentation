@@ -48,8 +48,10 @@ export default function WhatIsHappening() {
       <h1 className="text-3xl font-bold lg:text-7xl 2xl:text-9xl">
         What is happening here?
       </h1>
-      <h3 className="text-5xl mt-10 font-extrabold p-5">Box Shadow Utility Classes</h3>
-      <table className="table-auto text-5xl mt-5 text-left">
+      <h3 className="mt-10 p-5 text-5xl font-extrabold">
+        Box Shadow Utility Classes
+      </h3>
+      <table className="mt-5 table-auto text-left text-5xl">
         <thead>
           <th className="p-5 font-semibold underline">Tailwind Class</th>
           <th className="p-5 font-semibold underline">Properties</th>
@@ -57,8 +59,12 @@ export default function WhatIsHappening() {
         <tbody>
           {shadowExamples.map((utility) => (
             <tr key={utility.tailwind}>
-              <td className="p-5 text-blue-600">{utility.tailwind}</td>
-              <td className="p-5 font-mono">{utility.properties}</td>
+              <td className="p-5 font-bold text-blue-600">
+                {utility.tailwind}
+              </td>
+              <td className="p-5 font-mono text-stone-500">
+                {utility.properties}
+              </td>
             </tr>
           ))}
         </tbody>
