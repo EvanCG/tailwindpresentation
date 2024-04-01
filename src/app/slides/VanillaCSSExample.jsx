@@ -1,12 +1,12 @@
 export default function VanillaCSSExample() {
   return (
-    <div className="h-full w-full overflow-y-auto rounded-2xl bg-neutral-100 p-16 pt-20 opacity-85 shadow-lg">
-      <h1 className="text-9xl font-bold">
+    <div className="h-full w-full overflow-y-auto rounded-2xl bg-neutral-100 p-8 pt-10 opacity-85 shadow-lg 2xl:p-16 2xl:pt-20">
+      <h1 className="text-3xl font-bold lg:text-7xl 2xl:text-9xl">
         Let&apos;s look at a vanilla CSS example:
       </h1>
       <div className="flex flex-row justify-around">
-        <div className="m-5">
-          <h3 className="mx-5 mb-5 mt-20 font-mono text-5xl font-bold">
+        <div className="m-2 2xl:m-5">
+          <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             index.html
           </h3>
           <div className="mockup-code">
@@ -42,8 +42,8 @@ export default function VanillaCSSExample() {
             </pre>
           </div>
         </div>
-        <div className="m-5">
-          <h3 className="mx-5 mb-5 mt-20 font-mono text-5xl font-bold">
+        <div className="m-2 2xl:m-5">
+          <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             styles.css
           </h3>
           <div className="mockup-code">
