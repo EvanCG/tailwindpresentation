@@ -1,5 +1,3 @@
-import TailwindDivExample from "./TailwindDivExample";
-
 export default function VanillaCSSExample() {
   return (
     <div className="h-full w-full overflow-y-auto rounded-2xl bg-neutral-100 p-16 pt-20 opacity-85 shadow-lg">

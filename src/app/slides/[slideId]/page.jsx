@@ -10,7 +10,7 @@ import WhatIsTailwind from "../WhatIsTailwind";
 import TailwindHistory from "../TailwindHistory";
 import ExampleDiv from "../ExampleDiv";
 import VanillaCSSExample from "../VanillaCSSExample";
-
+import TailwindCSSExample from "../TailwindCSSExample";
 
 /* Boilerplate slides & examples */
 // import CSSDivExample from "../CSSDivExample";
@@ -28,6 +28,7 @@ export default function Slide({ params }) {
     <TailwindHistory key="1" />,
     <ExampleDiv key="1" />,
     <VanillaCSSExample key="1" />,
+    <TailwindCSSExample key="1" />,
     <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
 
     /* Boilerplate examples */
@@ -42,7 +43,7 @@ export default function Slide({ params }) {
     <div>
       <BackgroundAnimation />
       <div className="z-20 flex h-dvh flex-col justify-between bg-neutral-50 p-10 pb-5">
-        <div className="flex h-full shrink flex-col justify-center">
+        <div className="flex h-full max-h-[90%] shrink flex-col justify-center">
           {slideArray[Math.min(currentSlide, slideArray.length - 1)]}
         </div>
         <div className="mt-5 shrink-0 self-end">
