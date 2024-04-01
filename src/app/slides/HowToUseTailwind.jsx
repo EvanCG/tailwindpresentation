@@ -19,8 +19,8 @@ export default function HowToUseTailwind() {
             <div className="flex justify-center bg-neutral-50">
               <Image
                 src="/TailwindCSSWebsite.png"
-                width={1536}
-                height={1024}
+                width={1536 / 2}
+                height={1024 / 2}
                 alt="TailwindCSS.com Website"
               />
             </div>
