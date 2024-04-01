@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function NavArrows({ currentSlide, slideCount }) {
+  
   const router = useRouter();
 
+  useEffect(() => {
+  
   /* set up keyboard listener */
   const body = document.querySelector("body");
   body.addEventListener("keydown", (e) => {
@@ -17,6 +21,9 @@ export default function NavArrows({ currentSlide, slideCount }) {
       router.push(`/slides/${Number(currentSlide) + 1}`);
     }
   });
+  });
+  
+  
 
   return (
     <div className="z-50 flex space-x-2 rounded-full border-2 bg-gray-100 p-3">
