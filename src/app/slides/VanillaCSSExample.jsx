@@ -5,8 +5,8 @@ export default function VanillaCSSExample() {
         How this works with vanilla CSS:
       </h1>
       <div className="flex flex-row justify-around">
-        <div className="m-2 2xl:m-5 w-4/5">
-          <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
+        <div className="m-2 w-4/5 2xl:m-5">
+          <h3 className="mx-5 mb-5 mt-7 font-mono text-5xl font-bold 2xl:mt-20">
             index.html
           </h3>
           <div className="mockup-code">
@@ -42,8 +42,8 @@ export default function VanillaCSSExample() {
             </pre>
           </div>
         </div>
-        <div className="m-2 2xl:m-5 w-4/5">
-          <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
+        <div className="m-2 w-4/5 2xl:m-5">
+          <h3 className="mx-5 mb-5 mt-7 font-mono text-5xl font-bold 2xl:mt-20">
             styles.css
           </h3>
           <div className="mockup-code">
@@ -78,8 +78,8 @@ export default function VanillaCSSExample() {
             <pre data-prefix="7">
               <code>
                 {"  "}
-                <span className="text-orange-500"> background-color: </span>
-                <span className="text-red-500">#dc2626</span>;
+                <span className="text-orange-500"> width: </span>
+                <span className="text-red-500">80%</span>;
               </code>
             </pre>
             <pre data-prefix="8">
@@ -99,15 +99,15 @@ export default function VanillaCSSExample() {
             <pre data-prefix="10">
               <code>
                 {"  "}
-                <span className="text-orange-500"> padding: </span>
-                <span className="text-red-500">1.25rem</span>;
+                <span className="text-orange-500"> background-color: </span>
+                <span className="text-red-500">#dc2626</span>;
               </code>
             </pre>
             <pre data-prefix="11">
               <code>
                 {"  "}
-                <span className="text-orange-500"> width: </span>
-                <span className="text-red-500">80%</span>;
+                <span className="text-orange-500"> padding: </span>
+                <span className="text-red-500">1.25rem</span>;
               </code>
             </pre>
             <pre data-prefix="12">
