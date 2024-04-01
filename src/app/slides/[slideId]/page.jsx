@@ -15,6 +15,7 @@ import TailwindCSSBenefits from "../TailwindCSSBenefits";
 import WhatIsHappening from "../WhatIsHappening";
 import HowToUseTailwind from "../HowToUseTailwind";
 import Addons from "../Addons";
+import ComponentLibraries from "../ComponentLIbraries";
 
 /* Boilerplate slides & examples */
 // import CSSDivExample from "../CSSDivExample";
@@ -37,6 +38,7 @@ export default function Slide({ params }) {
     <WhatIsHappening key="1" />,
     <HowToUseTailwind key="1" />,
     <Addons key="1" />,
+    <ComponentLibraries key="1" />,
     <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
 
     /* Boilerplate examples */
