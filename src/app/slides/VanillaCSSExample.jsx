@@ -9,7 +9,7 @@ export default function VanillaCSSExample() {
           <h3 className="mx-5 mb-5 mt-7 font-mono text-5xl font-bold 2xl:mt-20">
             index.html
           </h3>
-          <div className="mockup-code">
+          <div className="mockup-code text-2xl">
             <pre data-prefix="1">
               <code>
                 <span>{"<"}</span>
@@ -46,7 +46,7 @@ export default function VanillaCSSExample() {
           <h3 className="mx-5 mb-5 mt-7 font-mono text-5xl font-bold 2xl:mt-20">
             styles.css
           </h3>
-          <div className="mockup-code">
+          <div className="mockup-code text-2xl">
             <pre data-prefix="1">
               <code>
                 <span className="text-cyan-400">#divContainer</span> {"{"}

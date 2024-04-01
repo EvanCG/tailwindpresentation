@@ -27,7 +27,7 @@ const features = [
 export default function VerticalColumn() {
   return (
     <div className="py-12">
-      <div className="mx-auto max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <div className="mx-auto max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none">
           {features.map((feature) => (
             <div key={feature.name} className="flex flex-col">

@@ -6,7 +6,7 @@ export default function ExampleDiv() {
       <h1 className="text-3xl font-bold lg:text-7xl 2xl:text-9xl">
         Let&apos;s check out an example div:
       </h1>
-      <div className="flex flex-row justify-around h-4/5">
+      <div className="flex flex-row justify-around h-4/5 text-3xl">
         <div className="m-2 size-full py-10 pt-0 2xl:m-5 2xl:px-16">
           <h3 className="mx-5 mb-5 mt-7 font-mono text-5xl font-bold 2xl:mt-20">
             Default

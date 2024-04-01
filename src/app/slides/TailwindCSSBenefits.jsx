@@ -6,12 +6,12 @@ export default function TailwindCSSBenefits() {
       <h1 className="text-3xl font-bold lg:text-7xl 2xl:text-9xl">
         And how this compares with Tailwind CSS:
       </h1>
-      <div className="flex flex-row justify-start">
+      <div className="flex flex-col justify-start">
         <div className="m-2 2xl:m-5">
           <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             index.html
           </h3>
-          <div className="mockup-code">
+          <div className="mockup-code text-2xl max-w-fit">
             <pre data-prefix="1">
               <code>
                 <span>{"<"}</span>

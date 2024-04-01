@@ -9,7 +9,7 @@ export default function TailwindCSSExample() {
           <h3 className="mx-5 mb-5 mt-7 2xl:mt-20 font-mono text-5xl font-bold">
             index.html
           </h3>
-          <div className="mockup-code">
+          <div className="mockup-code text-2xl  max-w-fit">
             <pre data-prefix="1">
               <code>
                 <span>{"<"}</span>
