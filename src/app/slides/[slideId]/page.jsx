@@ -4,7 +4,6 @@ import NavArrows from "@/app/ui/NavArrows";
 import BackgroundAnimation from "@/app/ui/BackgroundAnimation";
 
 /* Slides */
-import SponsorSlide from "../SponsorSlide";
 import TitleSlide from "../TitleSlide";
 import WhatIsTailwind from "../WhatIsTailwind";
 import TailwindHistory from "../TailwindHistory";
@@ -30,7 +29,6 @@ export default function Slide({ params }) {
 
   // Passing in keys to keep linter happy
   const slideArray = [
-    <SponsorSlide imageUrl={"/titlesponsor.png"} key="1" />,
     <TitleSlide key="1" />,
     <WhatIsTailwind key="1" />,
     <TailwindHistory key="1" />,
@@ -46,7 +44,6 @@ export default function Slide({ params }) {
     <HowToUseTailwind key="2" />,
     <Questions key="1" />,
     <WorksCited key="1" />,
-    <SponsorSlide imageUrl={"/creditsponsor.png"} key="2" />,
 
     /* Boilerplate examples */
     // <CSSDivExample key="1" />,
